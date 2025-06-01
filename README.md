@@ -126,7 +126,7 @@ MACCA'SIDE/
 
 ## 📬 Contacto
 Si tienes dudas, sugerencias o deseas contribuir, puedes contactar al autor:
-- **Correo:** reyli.perez@ejemplo.com
+- **Correo:** reyliperezacosta@gmail.com
 - **LinkedIn:** [linkedin.com/in/reyli-perez](https://linkedin.com/in/reyli-perez)
 
 ---

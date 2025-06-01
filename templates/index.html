@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MPL COMUNICATIONS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}" />
+</head>
+<body data-theme="dark">
+  <header>
+    <div class="mplHeaderDecor">
+      <svg class="mplHeaderWave" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fill-opacity="0.08" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"></path></svg>
+      <svg class="mplHeaderCircle" width="60" height="60"><circle cx="30" cy="30" r="28" fill="#ffb86b22" /></svg>
+    </div>
+    <span class="mplHeaderTitle">MACCA'S <span class="mplHeaderTitleAccent">IDE</span></span>
+    <div class="mplHeaderSubtitle">Lenguajes y Autómatas</div>
+  </header>
+  <div class="container">
+    <section class="editor-section">
+      <h2 class="section-title"><span style="font-size:1.2em;">⌨️</span> Editor de Código</h2>
+      <p class="section-desc">Escribe tu código a continuación y selecciona una acción:</p>
+      <div class="editor-container">
+        <div id="lineNumbers"></div>
+        <div id="editor" contenteditable="true" spellcheck="false" oninput="handleEditorInput()"></div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="analizarLexico()">🔤 AB Léxico</button>
+        <button class="btn" onclick="analizarSintactico()">🧩 Sintáctico</button>
+        <button class="btn" onclick="ejecutarTuring()">🤖 Turing</button>
+        <button class="btn btn-clear" onclick="limpiarEditor()">🧹 Limpiar</button>
+      </div>
+    </section>
+    <section class="output-section">
+      <h2 class="section-title"><span style="font-size:1.2em;">📋</span> Resultado</h2>
+      <div class="output" id="resultado">Salida:\n🔍 Resultado del análisis ...</div>
+    </section>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

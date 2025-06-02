@@ -1,12 +1,29 @@
 # MACCA'S IDE
 
-## IDE Web para Análisis Léxico, Sintáctico y Máquina de Turing
+<div align="center">
+<table>
+  <tr>
+    <td style="vertical-align: top; text-align: center; padding-right: 24px;">
+      <img src="https://github.com/user-attachments/assets/e12deaf3-fae5-44f9-97a3-edc5dddd8ffa" alt="Imagen de WhatsApp 2025-06-01 a las 20 58 47_28069440" width="180"/><br/>
+      <strong>Reyli Pérez Acosta</strong>
+    </td>
+    <td style="vertical-align: top;">
+      <strong>📚 Datos Académicos</strong><br/>
+      <ul>
+        <li><strong>Estudiante:</strong> Reyli Pérez Acosta</li>
+        <li><strong>Profesor:</strong> Molina Gomez Kevin David</li>
+        <li><strong>Materia:</strong> Lenguajes y Autómatas</li>
+        <li><strong>Semestre:</strong> 6to Semestre</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</div>
 
 ---
 
-**Estudiante:** Reyli Pérez Acosta  
-**Profesor:** Molina Gomez Kevin David  
-**Semestre:** 6to Semestre
+---
+## IDE Web para Análisis Léxico, Sintáctico y Máquina de Turing
 
 ---
 
@@ -52,7 +69,7 @@ MACCA'SIDE/
 
 ---
 
-## 💻 Instalación y Ejecución
+## 💻 Instrucciones para Ejecutar el Proyecto
 ### Requisitos
 - Python 3.7 o superior
 - Flask
@@ -71,22 +88,34 @@ MACCA'SIDE/
 
 ---
 
-## 🧩 Especificaciones del Lenguaje
-- **Palabras clave permitidas:** `if`, `else`, `while`, `for`, `return`
-- **Símbolos válidos:** `(`, `)`, `{`, `}`, `+`, `-`, `*`, `/`, `=`
-- **Símbolos prohibidos:** `;`, `:`
-- **Números:** Secuencias de dígitos
-- **Identificadores:** Nombres válidos de variable
+## 🧩 Explicación del Lenguaje Personalizado
 
-### Reglas Sintácticas
-- No se permiten estructuras de control (`if`, `while`, `for`, etc.)
-- Cada línea debe ser una asignación válida con un solo `=`
-- El nombre de la variable debe ser válido
-- No se permiten líneas vacías (excepto saltos de línea)
+### Tokens Reconocidos
+| Tipo            | Ejemplo(s)           | Descripción                                 |
+|-----------------|---------------------|---------------------------------------------|
+| Palabra clave   | if, else, while     | Estructuras reservadas (no permitidas)      |
+| Símbolo válido  | (, ), {, }, +, -, *, /, = | Operadores y delimitadores permitidos |
+| Símbolo prohibido | ;, :              | No permitidos, generan error léxico         |
+| Número          | 10, 42              | Secuencias de dígitos                       |
+| Identificador   | mplValor, resultado | Nombres válidos de variable                 |
+
+### Gramática y Reglas Sintácticas
+- No se permiten estructuras de control (`if`, `while`, `for`, etc.).
+- Cada línea debe ser una asignación válida con un solo `=`.
+- El nombre de la variable debe ser válido (identificador).
+- No se permiten líneas vacías (excepto saltos de línea).
+
+### Errores Comunes Detectados
+- Uso de palabras clave reservadas.
+- Uso de símbolos prohibidos (`;`, `:`).
+- Asignaciones con más de un `=` o sin nombre de variable.
+- Valor de asignación faltante.
+- Línea sin operador de asignación `=`.
 
 ---
 
-## 📝 Ejemplos de Código
+## 📝 Ejemplos de Entrada Válida e Inválida
+
 | Ejemplo         | Código                              | Resultado esperado                  |
 |-----------------|-------------------------------------|-------------------------------------|
 | Válido          | `mplValor = 10`                     | Asignación correcta                 |
@@ -126,7 +155,7 @@ MACCA'SIDE/
 
 ## 📬 Contacto
 Si tienes dudas, sugerencias o deseas contribuir, puedes contactar al autor:
-- **Correo:** reyliperezacosta@gmail.com
+- **Correo:** reyli.perez@ejemplo.com
 - **LinkedIn:** [linkedin.com/in/reyli-perez](https://linkedin.com/in/reyli-perez)
 
 ---
